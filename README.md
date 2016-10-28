@@ -4,8 +4,8 @@
 
 This repository contains the Java implementations, validated with [unit tests]
 (https://github.com/hieule22/algo-handbook/tree/master/src/test), of several
-algorithms and data structures essential for the competitive programming in
-general and the ACM-ICPC in particular.
+algorithms and data structures essential for competitive programming in general
+and the ACM-ICPC in particular.
 
 ## Table of Content
 
@@ -14,6 +14,10 @@ general and the ACM-ICPC in particular.
 * [Suffix Array](https://github.com/hieule22/algo-handbook/blob/master/src/core/strings/SuffixArray.java)
 
 ### [Others](https://github.com/hieule22/algo-handbook/tree/master/src/core/others)
+
+* [Binary Indexed Tree](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/BinaryIndexedTree.java)
+
+* [Union-Find Disjoint Sets](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/UnionFind.java)
 
 * [Segment Tree](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/SegmentTree.java)
 
