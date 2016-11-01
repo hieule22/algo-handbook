@@ -9,11 +9,15 @@ and the ACM-ICPC in particular.
 
 ## Table of Content
 
-### [Strings](https://github.com/hieule22/algo-handbook/tree/master/src/core/strings)
+### Graphs
+
+* [Maximum Bipartite Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/graph/MaximumBipartiteMatching.java)
+
+### Strings
 
 * [Suffix Array](https://github.com/hieule22/algo-handbook/blob/master/src/core/strings/SuffixArray.java)
 
-### [Others](https://github.com/hieule22/algo-handbook/tree/master/src/core/others)
+### Others
 
 * [Binary Indexed Tree](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/BinaryIndexedTree.java)
 
