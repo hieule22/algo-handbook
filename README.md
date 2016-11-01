@@ -15,6 +15,8 @@ and the ACM-ICPC in particular.
 
 ### Strings
 
+* [KMP String Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/strings/KMPStringMatching.java)
+
 * [Suffix Array](https://github.com/hieule22/algo-handbook/blob/master/src/core/strings/SuffixArray.java)
 
 ### Others
