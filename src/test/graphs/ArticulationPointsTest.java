@@ -1,6 +1,6 @@
-package test.graph;
+package test.graphs;
 
-import core.graph.ArticulationPoints;
+import core.graphs.ArticulationPoints;
 import org.junit.Test;
 
 import java.util.ArrayList;

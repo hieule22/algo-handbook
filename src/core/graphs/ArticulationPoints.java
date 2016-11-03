@@ -1,4 +1,4 @@
-package core.graph;
+package core.graphs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -91,6 +91,4 @@ public class ArticulationPoints {
             }
         }
     }
-
-
 }

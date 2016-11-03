@@ -11,11 +11,11 @@ and the ACM-ICPC in particular.
 
 ### Graphs
 
-* [Articulation Points](https://github.com/hieule22/algo-handbook/blob/master/src/core/graph/ArticulationPoints.java)
+* [Articulation Points](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/ArticulationPoints.java)
 
-* [Lowest Common Ancestor](https://github.com/hieule22/algo-handbook/blob/master/src/core/graph/LowestCommonAncestor.java)
+* [Lowest Common Ancestor](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/LowestCommonAncestor.java)
 
-* [Maximum Bipartite Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/graph/MaximumBipartiteMatching.java)
+* [Maximum Bipartite Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/MaximumBipartiteMatching.java)
 
 ### Strings
 

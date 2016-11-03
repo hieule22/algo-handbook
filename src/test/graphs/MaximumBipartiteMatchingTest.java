@@ -1,6 +1,6 @@
-package test.graph;
+package test.graphs;
 
-import core.graph.MaximumBipartiteMatching;
+import core.graphs.MaximumBipartiteMatching;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;

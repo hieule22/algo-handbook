@@ -1,4 +1,4 @@
-package core.graph;
+package core.graphs;
 
 /**
  * Representation of an edge. The edge origin is not tracked.
