@@ -25,6 +25,10 @@ and the ACM-ICPC in particular.
 
 * [Suffix Array](https://github.com/hieule22/algo-handbook/blob/master/src/core/strings/SuffixArray.java)
 
+### Mathematics
+
+* [Modular Arithmetics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java)
+
 ### Others
 
 * [Binary Indexed Tree](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/BinaryIndexedTree.java)
