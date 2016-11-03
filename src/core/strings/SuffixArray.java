@@ -4,23 +4,28 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Suffix array construction.
+ * Algorithm to construct a suffix array for an input character sequence
+ * and return the length of the longest common prefix between any two suffixes
+ * of the sequence.
  * @author Hieu Le
  * @version 10/27/16
  */
 public class SuffixArray {
+    // suffixArr[i] gives the starting index of the ith smallest suffix.
+    private Integer[] suffixArr;
+    // ranks[k][] stores the relative orders of all substrings of length 2^k.
+    private int[][] ranks;
+
     /**
-     * Returns a suffix array constructed from an input character sequence.
+     * Constructs a suffix array for an input character sequence.
      * @param str the input character sequence
-     * @return a suffix array constructed from str
      */
-    public static int[] construct(CharSequence str) {
+    public SuffixArray(CharSequence str) {
         final int length = str.length();
         // maxPower gives the smallest power of 2 greater than or equal to length.
         final int maxPower = (int) Math.ceil(Math.log(length) / Math.log(2));
-        Integer[] suffixArr = new Integer[length];
-        // ranks[k][] stores the relatives orders of all substrings of length 2^k.
-        int[][] ranks = new int[maxPower + 1][length];
+        suffixArr = new Integer[length];
+        ranks = new int[maxPower + 1][length];
         for (int i = 0; i < length; ++i) {
             suffixArr[i] = i;
             ranks[0][i] = str.charAt(i);
@@ -51,8 +56,32 @@ public class SuffixArray {
                 ranks[currentPower][suffixArr[j]] = currentRank;
             }
         }
+    }
 
+    /**
+     * Gets the underlying suffix array.
+     * @return the suffix array associated with this instance.
+     */
+    public int[] getSuffixArray() {
         return toPrimitive(suffixArr);
+    }
+
+    /**
+     * Returns the length of the longest common prefix between the suffixes starting at a
+     * and b respectively.
+     * @param a the starting index of the first suffix
+     * @param b the starting index of the second suffix
+     * @return the length of the longest prefix between s[a..] and s[b..]
+     */
+    public int getLongestCommonPrefix(int a, int b) {
+        for (int i = ranks.length - 1; i >= 0; --i) {
+            if (a + (1 << i) > suffixArr.length || b + (1 << i) > suffixArr.length)
+                continue;
+            if (ranks[i][a] == ranks[i][b]) {
+                return (1 << i) + getLongestCommonPrefix(a + (1 << i), b + (1 << i));
+            }
+        }
+        return 0;
     }
 
     private static int[] toPrimitive(Integer[] arr) {
