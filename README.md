@@ -13,6 +13,8 @@ and the ACM-ICPC in particular.
 
 * [Articulation Points](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/ArticulationPoints.java)
 
+* [Bridges](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/Bridges.java)
+
 * [Lowest Common Ancestor](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/LowestCommonAncestor.java)
 
 * [Maximum Bipartite Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/MaximumBipartiteMatching.java)
@@ -39,4 +41,4 @@ and the ACM-ICPC in particular.
 
 * [Data Science Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/) by TopCoder.
 
-* [GeeksforGeeks](http://www.geeksforgeeks.org)
+* [GeeksforGeeks](http://www.geeksforgeeks.org).
