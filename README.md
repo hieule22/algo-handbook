@@ -29,6 +29,8 @@ and the ACM-ICPC in particular.
 
 * [Modular Arithmetics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java)
 
+* [Sieve of Eratosthenes and Euler's Totient Function](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Primality.java)
+
 ### Others
 
 * [Binary Indexed Tree](https://github.com/hieule22/algo-handbook/blob/master/src/core/others/BinaryIndexedTree.java)
