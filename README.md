@@ -27,6 +27,8 @@ and the ACM-ICPC in particular.
 
 ### Mathematics
 
+* [Counting and Combinatorics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Counting.java)
+
 * [Modular Arithmetics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java)
 
 * [Sieve of Eratosthenes and Euler's Totient Function](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Primality.java)
