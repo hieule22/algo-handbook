@@ -8,8 +8,7 @@ package core.math;
 public class Counting {
 
     /**
-     * Computes the value of a given base raised to a given exponent
-     * modulo a given mod using exponentiation by squaring.
+     * An inline, iterative implementation of exponentiation by squaring.
      */
     public static long modPow(long base, long exponent, long mod) {
         if (base == 0) {
@@ -26,6 +25,9 @@ public class Counting {
         return result;
     }
 
+    /**
+     * A recursive implementation of exponentiation by squaring.
+     */
     public static long modPowRecursive(long base, long exponent, long mod) {
         if (base == 0) {
             return 0;
@@ -38,5 +40,20 @@ public class Counting {
             result = result * base % mod;
         }
         return result;
+    }
+
+    /**
+     * Constructs a Pascal's triangle of given height. Each entry can then be used
+     * to compute the value of n choose k.
+     */
+    public static long[][] constructPascalTriangle(int bound, long mod) {
+        long[][] nCr = new long[bound + 1][bound + 1];
+        for (int n = 0; n <= bound; ++n) {
+            nCr[n][0] = 1;
+            for (int k = 1; k <= n; ++k) {
+                nCr[n][k] = (nCr[n - 1][k - 1] + nCr[n - 1][k]) % mod;
+            }
+        }
+        return nCr;
     }
 }
