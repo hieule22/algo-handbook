@@ -27,11 +27,17 @@ and the ACM-ICPC in particular.
 
 ### Mathematics
 
-* [Counting and Combinatorics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Counting.java)
+* Counting and Combinatorics
+  * [Fast exponentiation by squaring](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Counting.java#L13)
+  * [Binomial coefficients by Pascal's triangle method](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Counting.java#L49)
 
-* [Modular Arithmetics](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java)
+* Modular Arithmetics
+  * [Greatest common divisor](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java#L17)
+  * [Lowest common divisor](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Modular.java#L27)
 
-* [Sieve of Eratosthenes and Euler's Totient Function](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Primality.java)
+* Primality
+  * [Sieve of Eratosthenes](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Primality.java#L18)
+  * [Euler's totient function](https://github.com/hieule22/algo-handbook/blob/master/src/core/math/Primality.java#L39)
 
 ### Others
 

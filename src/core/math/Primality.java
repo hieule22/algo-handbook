@@ -48,4 +48,30 @@ public class Primality {
             result -= result / n;
         return result;
     }
+
+    /**
+     * Checks if a positive number n is a prime.
+     * @param n the positive number whose primality is to be checked
+     * @return true if n is prime; false otherwise
+     */
+    public static boolean isPrime(int n) {
+        if (n < 2) {
+            return false;
+        }
+        if (n == 2) {
+            return true;
+        }
+        // Optimization since no even number greater than 2 is prime.
+        if (n % 2 == 0) {
+            return false;
+        }
+
+        int threshold = (int) Math.sqrt(n);
+        for (int divisor = 3; divisor <= threshold; divisor += 2) {
+            if (n % divisor == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

@@ -1,12 +1,12 @@
 package test.math;
 
 import core.math.Modular;
-import core.math.Primality;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Random;
 
+import static core.math.Primality.*;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -18,9 +18,9 @@ import static org.junit.Assert.assertTrue;
 public class PrimalityTest {
 
     @Test
-    public void sieve() throws Exception {
+    public void sieveTest() throws Exception {
         final int MAX_VALUE = 10;
-        boolean[] isPrime = Primality.sieve(MAX_VALUE);
+        boolean[] isPrime = sieve(MAX_VALUE);
         int[] primes = {2, 3, 5, 7};
         assertEquals(MAX_VALUE + 1, isPrime.length);
         for (int i = 0; i <= MAX_VALUE; ++i) {
@@ -30,10 +30,10 @@ public class PrimalityTest {
                 assertFalse(isPrime[i]);
         }
 
-        isPrime = Primality.sieve(1);
+        isPrime = sieve(1);
         assertTrue(isPrime.length == 2 && !isPrime[0] && !isPrime[1]);
 
-        isPrime = Primality.sieve(10000);
+        isPrime = sieve(10000);
         boolean[] isPrimeExpected = sieveNaive(10000);
         assertEquals(isPrimeExpected.length, isPrime.length);
         for (int i = 0; i < isPrime.length; ++i)
@@ -59,17 +59,17 @@ public class PrimalityTest {
     }
 
     @Test
-    public void phi() throws Exception {
-        assertEquals(1, Primality.phi(1));
-        assertEquals(1, Primality.phi(2));
-        assertEquals(4, Primality.phi(12));
-        assertEquals(96, Primality.phi(97));
-        assertEquals(24, Primality.phi(35));
+    public void phiTest() throws Exception {
+        assertEquals(1, phi(1));
+        assertEquals(1, phi(2));
+        assertEquals(4, phi(12));
+        assertEquals(96, phi(97));
+        assertEquals(24, phi(35));
 
         Random rng = new Random(System.nanoTime());
         for (int i = 0; i < 10; ++i) {
             int n = rng.nextInt(10000);
-            assertEquals(phiNaive(n), Primality.phi(n));
+            assertEquals(phiNaive(n), phi(n));
         }
     }
 
@@ -80,5 +80,18 @@ public class PrimalityTest {
                 ++result;
         }
         return result;
+    }
+
+    @Test
+    public void isPrimeTest() throws Exception {
+        assertFalse(isPrime(0));
+        assertFalse(isPrime(1));
+        assertFalse(isPrime(100));
+        assertFalse(isPrime(7 * 7));
+
+        assertTrue(isPrime(2));
+        for (int i = 3; i < 9; i += 2) {
+            assertTrue(isPrime(i));
+        }
     }
 }
