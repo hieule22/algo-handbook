@@ -23,7 +23,7 @@ and the ACM-ICPC in particular.
 
 * [Floyd-Warshall's Shortest Path Algorithm](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/FloydWarshallShortestPath.java)
 
-* [Detection of cycle in a directed graph](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/CyclicDirectedGraphDetector.java)
+* [Detection of cycle in a graph](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/CycleDetector.java)
 
 
 ### Strings
