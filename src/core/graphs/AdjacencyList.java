@@ -24,6 +24,13 @@ public class AdjacencyList {
     }
 
     /**
+     * Returns the number of nodes in this graph
+     */
+    public int getSize() {
+        return neighbors.size();
+    }
+
+    /**
      * Adds an edge emanating from origin to the graph.
      * @param origin the starting node of this edge
      * @param edge the edge to be added
