@@ -2,8 +2,8 @@
 
 ## About
 
-This repository contains the Java implementations, validated with [unit tests]
-(https://github.com/hieule22/algo-handbook/tree/master/src/test), of several
+This repository contains the Java implementations, validated with
+[unit tests](https://github.com/hieule22/algo-handbook/tree/master/src/test), of several
 algorithms and data structures essential for competitive programming in general
 and the ACM-ICPC in particular.
 
@@ -18,6 +18,11 @@ and the ACM-ICPC in particular.
 * [Lowest Common Ancestor](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/LowestCommonAncestor.java)
 
 * [Maximum Bipartite Matching](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/MaximumBipartiteMatching.java)
+
+* [Dijkstra's Shortest Path Algorithm](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/DijkstraShortestPath.java)
+
+* [Floyd-Warshall's Shortest Path Algorithm](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/FloydWarshallShortestPath.java)
+
 
 ### Strings
 
