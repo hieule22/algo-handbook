@@ -11,7 +11,7 @@ and the ACM-ICPC in particular.
 
 ### Graphs
 
-* [Articulation Points](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/ArticulationPoints.java)
+* [Articulation Points](blob/master/src/core/graphs/ArticulationPoints.java)
 
 * [Bridges](https://github.com/hieule22/algo-handbook/blob/master/src/core/graphs/Bridges.java)
 
